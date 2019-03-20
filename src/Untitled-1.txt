@@ -1,0 +1,75 @@
+
+    Details=(e)=>{
+        let details=[];
+        const value=e.target.value;
+        const regex=new RegExp(`^${value}`,"i");
+        details=Data.map(data=>data.title)
+        .sort()
+        .filter(x =>regex.test(x));
+        console.log(details);
+        this.setState({
+            details:[{title}]
+            });
+        
+    };
+
+
+
+
+
+     /*  for( var i=0;i>Data.length;i++){
+            if(value==details[i].title){
+                this.setState({
+                    detail:details[i]
+                })
+            }
+        }*/
+
+
+
+
+        class Demo extends Component{
+    state ={
+        details :[]
+    }
+   Result=(e)=>{
+        let details = [ ];
+        const value=e.target.value;
+        if(value.length>0){
+        
+        const regex=new RegExp(`^${value}`,"i");
+        details = Data.Data.map(persi=>persi.title)
+        .sort()
+        .fitler(v=>regex.test(v));
+   }
+this.setState({
+       details:details
+   });
+};
+    render(){
+        console.log("abc"+this.state.details)
+    return(
+          <h1>{this.state.details}</h1>
+        );
+    }
+} 
+
+
+
+
+
+
+          //  const value=e.target.value;
+         /*   if(suggest.length>0){
+            const regex=new RegExp(`^${value}`,"i");
+            details = Data.Data.map(persi=>persi.title)
+            .sort()
+            .filter(v=>regex.test(v));
+        }*/
+
+
+
+
+
+         <span class="abc">INGREDEANTS</span><span style={{"margin-left:-353px"}}>It is a long established fact</span>
+        <span class="ac">DESCRIPTION</span><span style={"margin-left:-353px"}>It is a long established fact</span>
