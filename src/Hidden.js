@@ -78,7 +78,10 @@ class Hidden extends Component {
                 <div>
                     <div >{this.renderSuggest()}</div>
                 </div>
+                {/* 
                 <PostData title={this.state.listing.title}  carb={this.state.listing.carb} />
+                */}
+                
             </div>
         );
     }
