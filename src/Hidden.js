@@ -26,7 +26,7 @@ class Hidden extends Component {
 
         });
     };
-    suggestionsSelected(value) {
+    suggestionsSelected = (value) => {
         let listing = [];
         listing = Data.Data.filter(person => person.title.toLowerCase() === value.toLowerCase());
         console.log(listing);
@@ -34,7 +34,8 @@ class Hidden extends Component {
             text: value,
             listing: listing
         });
-        this.history.push("/food-details");
+        console.log(this);
+        
     }
     renderSuggest() {
         const { details } = this.state;
